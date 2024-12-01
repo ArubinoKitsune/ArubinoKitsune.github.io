@@ -1,0 +1,12 @@
+#logo{
+    width: 2em;
+}
+body{
+    background-color: #9b6421;
+}
+.dropdown-menu{
+    background-color: #0f0f0f;
+}
+.dropdown-item{
+    color: rgb(169, 175, 180);
+}

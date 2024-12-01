@@ -5,47 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encyklopedia Kompanii Bursztynowego Zmierzchu</title>
     <link rel="icon" href="arts/logo.png">
-    <link href="bootstrap-5.2.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="js/script.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0f0f0f">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="arts/logo.png" id="logo"></a>
+          <a class="navbar-brand" href="#"><img src="arts/logo.gif" id="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 h4 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 h5 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Character
+                </a>
+                <ul class="dropdown-menu mb-lg-1" aria-labelledby="navbarDropdown " >
+                    <li><a class="dropdown-item mb-2 h6" href="#">Races</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Spells</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Feats</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Backgrounds</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="https://docs.google.com/spreadsheets/d/1CtGD2K6C79HNpMvKVhq_xdygmAXqO8NHvrfJti64nwY/edit?gid=329135731#gid=329135731">Inwokacje warlocka</a></li>
+                </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Class
+                    Classes
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item mb-2 h5" href="#">Artificer</a></li>
-                    <li><a class="dropdown-item mb-2 h5" href="#">Barbarian</a></li>
-                    <li><a class="dropdown-item mb-2 h5" href="#">Bard</a></li>
-                    <li><a class="dropdown-item mb-2 h5" href="#">Blood Hunter</a></li>
-                    <li><a class="dropdown-item mb-2 h5" href="#">Commoner</a></li>
-                    <li><a class="dropdown-item mb-2 h5" href="#">Cleric</a></li>
-                    <li><a class="dropdown-item mb-2 h5" href="#">Druid</a></li>
-                    <li><a class="dropdown-item mb-2 h5" href="#">Fighter</a></li>
-                    <li><a class="dropdown-item mb-2 h5" href="#">Monk</a></li>
-                    <li><a class="dropdown-item mb-2 h5" href="#">Paladin</a></li>
-                    <li><a class="dropdown-item mb-2 h5" href="#">Ranger</a></li>
-                    <li><a class="dropdown-item mb-2 h5" href="#">Rogue</a></li>
-                    <li><a class="dropdown-item mb-2 h5" href="#">Sorcerer</a></li>
-                    <li><a class="dropdown-item mb-2 h5" href="#">Summoner</a></li>
-                    <li><a class="dropdown-item mb-2 h5" href="#">Warlock</a></li>
-                    <li><a class="dropdown-item mb-2 h5" href="#">Wizard</a></li>
-                    
+                <ul class="dropdown-menu mb-lg-1" aria-labelledby="navbarDropdown " >
+                    <li><a class="dropdown-item mb-2 h6" href="#">Artificer</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Barbarian</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Bard</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Blood Hunter</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Commoner</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Cleric</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Druid</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Fighter</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Monk</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Paladin</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Ranger</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Rogue</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Sorcerer</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Summoner</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Warlock</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Wizard</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Rules
+                </a>
+                <ul class="dropdown-menu mb-lg-1" aria-labelledby="navbarDropdown " >
+                    <li><a class="dropdown-item mb-2 h6" href="https://docs.google.com/spreadsheets/d/1NPlDgwPX1WXDhV6gHq_n3tHIexG8hoksJRjPguQP0Zk/edit#gid=54213056">Kalkulator exp'a</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="https://docs.google.com/spreadsheets/d/1phqNAx_ROVigG14zaCGgs7V9tYkZlQ9KpQDG9mmk9o0/edit?gid=345586149#gid=345586149">Magazyn/Sklep</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#1">Zasady dotyczące postaci</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Downtime i Crafting</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Przepisywanie zaklęć</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Rzucanie i skakanie</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Summony i inne</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Targ</a></li>
+                    <li><a class="dropdown-item mb-2 h6" href="#">Zasady zaklęć i zwojów</a></li>
                 </ul>
               </li>
             </ul>
@@ -54,6 +78,6 @@
       </nav>
 
       <script src="js/jquery-3.6.1.js"></script>
-      <script src="bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
