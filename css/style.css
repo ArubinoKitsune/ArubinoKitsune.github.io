@@ -3,10 +3,37 @@
 }
 body{
     background-color: #9b6421;
+
 }
 .dropdown-menu{
     background-color: #0f0f0f;
 }
 .dropdown-item{
     color: rgb(169, 175, 180);
+}
+#aktualnosci {
+    text-align: center; 
+    background-color: #0f0f0f9a;
+    padding-top: 2em; padding-bottom: 2em;
+}
+#container {
+    display: flex; 
+    align-items: flex-start;
+    justify-content: center;
+
+}
+.image-container {
+    margin-right: 20px;
+}
+.list-container {
+    text-align: left;
+    margin-right: 17em;
+}
+#aktualnosci.ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+    margin: 0; 
+}
+#aktualnosci.img {
+    height: 14em;
 }
