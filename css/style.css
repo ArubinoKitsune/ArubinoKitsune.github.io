@@ -47,6 +47,13 @@ body{
     padding-left: 20px;
     margin: 0;
 }
-#arrow{
+.arrow{
+    height: 3.5em;
+    transform: rotate(-90deg);
+    float: right;
+    transition: transform 0.4s;
+}
 
+.rotate{
+    transform: rotate(90deg);
 }
