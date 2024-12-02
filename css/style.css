@@ -14,7 +14,9 @@ body{
 #aktualnosci {
     text-align: center; 
     background-color: #0f0f0f9a;
-    padding-top: 2em; padding-bottom: 2em;
+    padding-top: 2em; padding-bottom: 3em;
+    max-height: 20em;
+    border-bottom:#0F0F0F solid 0.2em;
 }
 #container {
     display: flex; 
@@ -27,7 +29,10 @@ body{
 }
 .list-container {
     text-align: left;
-    margin-right: 17em;
+    margin-right: 1em;
+    color: rgb(216, 216, 216);
+    padding-left: 1em;
+    padding-right: 1em;
 }
 #aktualnosci.ul {
     list-style-type: disc; 
@@ -36,4 +41,9 @@ body{
 }
 #aktualnosci.img {
     height: 14em;
+}
+.sublist {
+    list-style-type: circle;
+    padding-left: 20px;
+    margin: 0;
 }
