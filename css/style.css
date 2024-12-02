@@ -52,8 +52,29 @@ body{
     transform: rotate(-90deg);
     float: right;
     transition: transform 0.4s;
+    z-index: 10;
 }
 
 .rotate{
     transform: rotate(90deg);
+}
+
+.info_npc{
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: #0f0f0fc0;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    position: relative;
+    color: whitesmoke;
+    height: 50%;
+    z-index: 1;
+}
+
+.A{
+    font-size: bolder;
+    text-align: center;
+    padding-bottom: 0.4em;
+    border-bottom: dashed black 0.2em;
 }
