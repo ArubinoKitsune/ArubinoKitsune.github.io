@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encyklopedia Kompanii Bursztynowego Zmierzchu</title>
-    <link rel="icon" href="/arts/logo.png">
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
-    <script src="/js/jquery-3.6.1.js"></script>
-    <script src="/js/script.js"></script>
+    <link rel="icon" href="arts/logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0f0f0f">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html"><img src="arts/logo.png" id="logo" onmouseover="changeLogo()" onmouseout="resetLogo()"></a>
+          <a class="navbar-brand" href="#"><img src="arts/logo.png" id="logo" onmouseover="changeLogo()" onmouseout="resetLogo()"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -76,12 +76,44 @@
           </div>
         </div>
       </nav>
-    <div class="info">
-      <h1 class="A">A</h1>
-      <img src="/arts/logo.gif">
+
+      <div id="aktualnosci">
+        <div id="container">
+            <div class="image-container">
+                <img src="arts/logo.png" alt="Logo po lewej">
+            </div>
+            <div class="list-container">
+                <h2>Aktualnosci</h2>
+                <ul>
+                    <li>Pierwszy punkt
+                        <ul class="sublist">
+                            <li>Podpunkt 1.1</li>
+                        </ul>
+                    </li>
+                    <li>Drugi punkt
+                        <ul class="sublist">
+                            <li>Podpunkt 2.1</li>
+                        </ul>
+                    </li>
+                    <li>Trzeci punkt
+                        <ul class="sublist">
+                            <li>Podpunkt 3.1</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="image-container">
+                <img src="arts/buzzan.png" style="height: 13em; padding-right: 4em;" alt="Logo po prawej">
+            </div>
+        </div>
+    </div>
+    <img src="arts/arrow_circle.png" class="arrow" id="arrow"> 
+    <div class="info1">
+      <h1 class="A">Ważne postacie</h1>
+      
     </div>
      
 
-      <script src="/js/bootstrap.bundle.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
