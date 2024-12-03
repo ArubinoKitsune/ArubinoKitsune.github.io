@@ -1,9 +1,16 @@
 function changeLogo() {
-    document.getElementById("logo").src = "./arts/logo.gif";
+    document.getElementById("logo").src = "arts/logo.gif";
 }
 
 function resetLogo() {
-    document.getElementById("logo").src = "./arts/logo.png";
+    document.getElementById("logo").src = "arts/logo.png";
+}
+function changeLogolower() {
+    document.getElementById("logo").src = "/arts/logo.gif";
+}
+
+function resetLogolower() {
+    document.getElementById("logo").src = "/arts/logo.png";
 }
 var z = 0;
 $(document).ready(function() {
