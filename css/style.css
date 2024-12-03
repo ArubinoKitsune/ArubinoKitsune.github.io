@@ -59,17 +59,18 @@ body{
     transform: rotate(90deg);
 }
 
-.info_npc{
+.info{
     width: 100%;
-    max-width: 80%;
-    margin: 0 auto;
-    background-color: #0f0f0fc0;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    position: relative;
-    color: whitesmoke;
-    height: 50%;
-    z-index: 1;
+    max-width: 80%; /* Maksymalna szerokość */
+    margin: 0 auto; /* Wyśrodkowanie w poziomie */
+    background-color: #0f0f0fb9; /* Kolor tła */
+    padding: 20px; /* Padding wewnętrzny */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Cień */
+    position: relative; /* Ustawienie względne */
+    color: whitesmoke; /* Kolor tekstu */
+    height: 100vh; /* Ustaw wysokość na 100% wysokości widoku */
+    z-index: 1; /* Ustawienie priorytetu warstwy */
+
 }
 
 .A{
