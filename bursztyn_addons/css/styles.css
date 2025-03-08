@@ -1,0 +1,29 @@
+table {
+    width: 50vw; /* Szerokość tabeli */
+    border: 0.1vw black solid;
+    table-layout: fixed; /* Umożliwia stałą szerokość komórek */
+}
+
+td {
+    border: black solid 0.1vw; /* Obramowanie komórek */
+    text-align: center; /* Wyrównanie tekstu w komórkach */
+    width: calc(50vw / 7); /* Ustawia szerokość komórek na równą część szerokości tabeli */
+    height: 50px; /* Ustawia stałą wysokość komórek */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Ustawia przyciski w kolumnie */
+    align-items: flex-start; /* Wyrównuje przyciski do lewej */
+    margin-left: 10px; /* Odstęp między <p> a przyciskami */
+}
+
+.stat{
+    display: flex; /* Ustawia elementy w linii */
+    align-items: center; /* Wyrównuje elementy w pionie do środka */
+    justify-content: center; /* Wyrównuje elementy w poziomie do środka */
+}
+
+.stat p{
+    margin-left: 28px;
+}

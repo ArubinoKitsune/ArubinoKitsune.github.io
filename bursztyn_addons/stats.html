@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scrips.js"></script>
+</head>
+<body>
+    <table>
+        
+        <tr>
+            <td>
+                <p>Attribute</p>
+            </td>
+            <td>
+                <p>Buy</p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p>Racial bonus</p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p>Total</p>
+            </td>
+            <td>
+                <p>Modifier</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>STR</p>
+            </td>
+            <td class="stat">
+                <p id="str_points">8</p>
+                <div class="button-container">
+                    <button id="add" onclick="STR_add()">/\</button>
+                    <button id="subtract" onclick="STR_subtract()">\/</button>
+                </div>
+            </td>
+            <td>
+                <p>+</p>
+            </td>
+            <td class="stat">
+                <p id="str_race_bonus">0</p>
+                <div class="button-container">
+                    <button id="add" onclick="">/\</button>
+                    <button id="subtract" onclick="">\/</button>
+                </div>
+            </td>
+            <td>
+                <p>=</p>
+            </td>
+            <td>
+                <p id="str_score">0</p>
+            </td>
+            <td>
+                <p id="str_bonus">0</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>DEX</p>
+            </td>
+            <td class="stat">
+                <p id="dex_points">8</p>
+                <div class="button-container">
+                    <button id="add" onclick="DEX_add()">/\</button>
+                    <button id="subtract" onclick="DEX_subtract()">\/</button>
+                </div>
+            </td>
+            <td>
+                <p>+</p>
+            </td>
+            <td class="stat">
+                <p id="dex_race_bonus">0</p>
+                <div class="button-container">
+                    <button id="add" onclick="">/\</button>
+                    <button id="subtract" onclick="">\/</button>
+                </div>
+            </td>
+            <td>
+                <p>=</p>
+            </td>
+            <td>
+                <p id="dex_score">0</p>
+            </td>
+            <td>
+                <p id="dex_bonus">0</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>CON</p>
+            </td>
+            <td class="stat">
+                <p id="con_points">8</p>
+                <div class="button-container">
+                    <button id="add" onclick="CON_add()">/\</button>
+                    <button id="subtract" onclick="CON_subtract()">\/</button>
+                </div>
+            </td>
+            <td>
+                <p>+</p>
+            </td>
+            <td class="stat">
+                <p id="con_race_bonus">0</p>
+                <div class="button-container">
+                    <button id="add" onclick="">/\</button>
+                    <button id="subtract" onclick="">\/</button>
+                </div>
+            </td>
+            <td>
+                <p>=</p>
+            </td>
+            <td>
+                <p id="con_score">0</p>
+            </td>
+            <td>
+                <p id="con_bonus">0</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>WIS</p>
+            </td>
+            <td class="stat">
+                <p id="wis_points">8</p>
+                <div class="button-container">
+                    <button id="add" onclick="WIS_add()">/\</button>
+                    <button id="subtract" onclick="WIS_subtract()">\/</button>
+                </div>
+            </td>
+            <td>
+                <p>+</p>
+            </td>
+            <td class="stat">
+                <p id="wis_race_bonus">0</p>
+                <div class="button-container">
+                    <button id="add" onclick="">/\</button>
+                    <button id="subtract" onclick="">\/</button>
+                </div>
+            </td>
+            <td>
+                <p>=</p>
+            </td>
+            <td>
+                <p id="wis_score">0</p>
+            </td>
+            <td>
+                <p id="wis_bonus">0</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>INT</p>
+            </td>
+            <td class="stat">
+                <p id="int_points">8</p>
+                <div class="button-container">
+                    <button id="add" onclick="INT_add()">/\</button>
+                    <button id="subtract" onclick="INT_subtract()">\/</button>
+                </div>
+            </td>
+            <td>
+                <p>+</p>
+            </td>
+            <td class="stat">
+                <p id="int_race_bonus">0</p>
+                <div class="button-container">
+                    <button id="add" onclick="">/\</button>
+                    <button id="subtract" onclick="">\/</button>
+                </div>
+            </td>
+            <td>
+                <p>=</p>
+            </td>
+            <td>
+                <p id="int_score">0</p>
+            </td>
+            <td>
+                <p id="int_bonus">0</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>CHA</p>
+            </td>
+            <td class="stat">
+                <p id="cha_points">8</p>
+                <div class="button-container">
+                    <button id="add" onclick="CHA_add()">/\</button>
+                    <button id="subtract" onclick="CHA_subtract()">\/</button>
+                </div>
+            </td>
+            <td>
+                <p>+</p>
+            </td>
+            <td class="stat">
+                <p id="cha_race_bonus">0</p>
+                <div class="button-container">
+                    <button id="add" onclick="">/\</button>
+                    <button id="subtract" onclick="">\/</button>
+                </div>
+            </td>
+            <td>
+                <p>=</p>
+            </td>
+            <td>
+                <p id="cha_score">0</p>
+            </td>
+            <td>
+                <p id="cha_bonus">0</p>
+            </td>
+        </tr>
+    </table>
+    <p>Spended points: <span id="spended_points">0</span>/<span id="max_points">27</span></p>
+</body>
+</html>
