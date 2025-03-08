@@ -73,12 +73,12 @@ function STR_subtract(){
     var str_p =Number( document.getElementById('str_points').innerHTML);
     if(str_p<14){
         if(str_p>6){
-        document.getElementById('str_points').innerHTML=Number(document.getElementById('str_points').innerHTML)-Number(1);
+        document.getElementById('str_points').innerHTML=str_p-Number(1);
         if(str_p>8){
             points=points-1;}
     }}
     else{
-        document.getElementById('str_points').innerHTML=Number(document.getElementById('str_points').innerHTML)-Number(1);
+        document.getElementById('str_points').innerHTML=str_p-Number(1);
         points=points-2;
     }
     Total_stats();
@@ -91,12 +91,12 @@ function DEX_add(){
         }
         else{
             if(points<max_points){
-        document.getElementById('dex_points').innerHTML=Number(document.getElementById('dex_points').innerHTML)+Number(1);
+        document.getElementById('dex_points').innerHTML=dex_p+Number(1);
         points=points+2;
     }}}
     else{
         if(points<max_points){
-        document.getElementById('dex_points').innerHTML=Number(document.getElementById('dex_points').innerHTML)+Number(1);
+        document.getElementById('dex_points').innerHTML=dex_p+Number(1);
         if(dex_p>7){
             points=points+1;}
     }}
@@ -106,12 +106,12 @@ function DEX_subtract(){
     var dex_p =Number( document.getElementById('dex_points').innerHTML);
     if(dex_p<14){
         if(dex_p>6){
-        document.getElementById('dex_points').innerHTML=Number(document.getElementById('dex_points').innerHTML)-Number(1);
+        document.getElementById('dex_points').innerHTML=dex_p-Number(1);
         if(dex_p>8){
             points=points-1;}
     }}
     else{
-        document.getElementById('dex_points').innerHTML=Number(document.getElementById('dex_points').innerHTML)-Number(1);
+        document.getElementById('dex_points').innerHTML=dex_p-Number(1);
         points=points-2;
     }
     Total_stats();
@@ -124,12 +124,12 @@ function CON_add(){
         }
         else{
             if(points<max_points){
-        document.getElementById('con_points').innerHTML=Number(document.getElementById('con_points').innerHTML)+Number(1);
+        document.getElementById('con_points').innerHTML=con_p+Number(1);
         points=points+2;
     }}}
     else{
         if(points<max_points){
-        document.getElementById('con_points').innerHTML=Number(document.getElementById('con_points').innerHTML)+Number(1);
+        document.getElementById('con_points').innerHTML=con_p+Number(1);
         if(con_p>7){
             points=points+1;}
     }}
@@ -139,17 +139,16 @@ function CON_subtract(){
     var con_p =Number( document.getElementById('con_points').innerHTML);
     if(con_p<14){
         if(con_p>6){
-        document.getElementById('con_points').innerHTML=Number(document.getElementById('con_points').innerHTML)-Number(1);
+        document.getElementById('con_points').innerHTML=con_p-Number(1);
         if(con_p>8){
             points=points-1;}
     }}
     else{
-        document.getElementById('con_points').innerHTML=Number(document.getElementById('con_points').innerHTML)-Number(1);
+        document.getElementById('con_points').innerHTML=con_p-Number(1);
         points=points-2;
     }
     Total_stats();
 }
-
 function WIS_add(){
     var wis_p =Number( document.getElementById('wis_points').innerHTML);
     if(wis_p>12){
@@ -158,12 +157,12 @@ function WIS_add(){
         }
         else{
             if(points<max_points){
-        document.getElementById('wis_points').innerHTML=Number(document.getElementById('wis_points').innerHTML)+Number(1);
+        document.getElementById('wis_points').innerHTML=wis_p+Number(1);
         points=points+2;
     }}}
     else{
         if(points<max_points){
-        document.getElementById('wis_points').innerHTML=Number(document.getElementById('wis_points').innerHTML)+Number(1);
+        document.getElementById('wis_points').innerHTML=wis_p+Number(1);
         if(wis_p>7){
             points=points+1;}
     }}
@@ -173,17 +172,16 @@ function WIS_subtract(){
     var wis_p =Number( document.getElementById('wis_points').innerHTML);
     if(wis_p<14){
         if(wis_p>6){
-        document.getElementById('wis_points').innerHTML=Number(document.getElementById('wis_points').innerHTML)-Number(1);
+        document.getElementById('wis_points').innerHTML=wis_p-Number(1);
         if(wis_p>8){
             points=points-1;}
     }}
     else{
-        document.getElementById('wis_points').innerHTML=Number(document.getElementById('wis_points').innerHTML)-Number(1);
+        document.getElementById('wis_points').innerHTML=wis_p-Number(1);
         points=points-2;
     }
     Total_stats();
 }
-
 function INT_add(){
     var int_p =Number( document.getElementById('int_points').innerHTML);
     if(int_p>12){
@@ -192,12 +190,12 @@ function INT_add(){
         }
         else{
             if(points<max_points){
-        document.getElementById('int_points').innerHTML=Number(document.getElementById('int_points').innerHTML)+Number(1);
+        document.getElementById('int_points').innerHTML=int_p+Number(1);
         points=points+2;
     }}}
     else{
         if(points<max_points){
-        document.getElementById('int_points').innerHTML=Number(document.getElementById('int_points').innerHTML)+Number(1);
+        document.getElementById('int_points').innerHTML=int_p+Number(1);
         if(int_p>7){
             points=points+1;}
     }}
@@ -207,17 +205,16 @@ function INT_subtract(){
     var int_p =Number( document.getElementById('int_points').innerHTML);
     if(int_p<14){
         if(int_p>6){
-        document.getElementById('int_points').innerHTML=Number(document.getElementById('int_points').innerHTML)-Number(1);
+        document.getElementById('int_points').innerHTML=int_p-Number(1);
         if(int_p>8){
             points=points-1;}
     }}
     else{
-        document.getElementById('int_points').innerHTML=Number(document.getElementById('int_points').innerHTML)-Number(1);
+        document.getElementById('int_points').innerHTML=int_p-Number(1);
         points=points-2;
     }
     Total_stats();
 }
-
 function CHA_add(){
     var cha_p =Number( document.getElementById('cha_points').innerHTML);
     if(cha_p>12){
@@ -226,12 +223,12 @@ function CHA_add(){
         }
         else{
             if(points<max_points){
-        document.getElementById('cha_points').innerHTML=Number(document.getElementById('cha_points').innerHTML)+Number(1);
+        document.getElementById('cha_points').innerHTML=cha_p+Number(1);
         points=points+2;
     }}}
     else{
         if(points<max_points){
-        document.getElementById('cha_points').innerHTML=Number(document.getElementById('cha_points').innerHTML)+Number(1);
+        document.getElementById('cha_points').innerHTML=cha_p+Number(1);
         if(cha_p>7){
             points=points+1;}
     }}
@@ -241,12 +238,12 @@ function CHA_subtract(){
     var cha_p =Number( document.getElementById('cha_points').innerHTML);
     if(cha_p<14){
         if(cha_p>6){
-        document.getElementById('cha_points').innerHTML=Number(document.getElementById('cha_points').innerHTML)-Number(1);
+        document.getElementById('cha_points').innerHTML=cha_p-Number(1);
         if(cha_p>8){
             points=points-1;}
     }}
     else{
-        document.getElementById('cha_points').innerHTML=Number(document.getElementById('cha_points').innerHTML)-Number(1);
+        document.getElementById('cha_points').innerHTML=cha_p-Number(1);
         points=points-2;
     }
     Total_stats();
