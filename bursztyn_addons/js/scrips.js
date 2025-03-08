@@ -1,6 +1,7 @@
 let points=0;
 let max_points=29;
 let additional_points=0;
+const attributes = ['str_points', 'dex_points', 'con_points', 'wis_points', 'int_points', 'cha_points'];
 document.addEventListener('DOMContentLoaded', function() {
     Total_stats(); 
 });
@@ -31,7 +32,6 @@ function Total_stats() {
 
     document.getElementById('spended_points').innerText=points;
 
-    const attributes = ['str_points', 'dex_points', 'con_points', 'wis_points', 'int_points', 'cha_points'];
     let minValue = Infinity;
 
 for (let attr of attributes) {
@@ -48,6 +48,7 @@ if (minValue === 6) {
     max_points = 27;
 }
     document.getElementById('max_points').innerHTML=max_points;    
+    a();
 };
 function STR_add(){
     var str_p =Number( document.getElementById('str_points').innerHTML);
@@ -250,3 +251,40 @@ function CHA_subtract(){
     }
     Total_stats();
 }
+function countLowValueAttributes() {
+    let count = 0;
+
+    for (let attr of attributes) {
+        let value = Number(document.getElementById(attr).innerHTML);
+        if (value < 8) {
+            count++;
+        }
+    }
+    return count;
+}
+function hasMoreThanOneLowValue() {
+    const lowValueCount = countLowValueAttributes();
+    return lowValueCount > 1;
+}
+
+function a(){
+    if (hasMoreThanOneLowValue()) {
+        console.log("Więcej niż jeden atrybut ma wartość mniejszą niż 8.");
+        document.getElementById('warning').style.visibility='visible';
+        for(let attr of attributes){
+            const element=document.getElementById(attr);
+            element.style.borderBottom = 'red 0.1vw solid';
+            element.style.color= 'red';
+        }
+    } else {
+        console.log("Mniej niż dwa atrybuty mają wartość mniejszą niż 8.");
+        document.getElementById('warning').style.visibility='hidden';
+        for(let attr of attributes){
+            for(let attr of attributes){
+                const element=document.getElementById(attr);
+                element.style.borderBottom = 'none';
+                element.style.color= 'black';
+            }
+        }
+    }
+};

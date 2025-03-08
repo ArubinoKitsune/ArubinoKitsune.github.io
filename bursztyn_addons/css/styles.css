@@ -27,3 +27,10 @@ td {
 .stat p{
     margin-left: 28px;
 }
+
+#warning{
+    display: inline-block;
+    color: red;
+    border-bottom: 0.2vw red solid;
+    visibility: hidden;
+}
